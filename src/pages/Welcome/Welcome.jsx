@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system'; 
 import Container from '@mui/material/Container'; 
 import CustomButton from '../../components/CustomButton/CustomButton';
-import welcome from '../../assets/welcome.png';
+import welcome from '../../assets/Curry Rice Hd Transparent, Indian Food Talley Curry With Rice, India, Food, Thali PNG Image For Free Download 1.png';
 
 const CustomBox = styled(Box)(({ theme }) => ({
     display: 'flex',
@@ -19,7 +19,7 @@ const CustomBox = styled(Box)(({ theme }) => ({
 
 const Title = styled(Typography)(({ theme }) => ({
     fontSize:'64px',
-    color:'#fff',
+    color:'#514e4e',
     fontWeight:'bold',
     margin: theme.spacing(4, 0, 4, 0),
     [theme.breakpoints.down('sm')]: {
@@ -30,7 +30,7 @@ const Title = styled(Typography)(({ theme }) => ({
 
 const Welcome = () => {
     return (
-        <Box sx={{ backgroundColor: '#fed801', minHeight: '80vh' }}>
+        <Box sx={{ backgroundColor: '#F6F193', minHeight: '80vh' }}>
             <Container>
                 <CustomBox>
                     <Box sx={{ flex: '1' }}>
@@ -44,10 +44,10 @@ const Welcome = () => {
                                 mb: '4',
                             }}
                         >
-                            Welcome to Techflix Restraunt
+                            Welcome to TAMARIND FOOD CORNER
                         </Typography>
                         <Title variant="h1">
-                            Discover a place where you'll love to eat.
+                        Experience flavors you'll fall in love with.
                         </Title>
                         <Typography
                             variant="body2"
@@ -57,7 +57,7 @@ const Welcome = () => {
                                 my: 4,
                             }}
                         >
-                            Immerse yourself in the elegant ambience as you savor each bite, accompanied by our extensive selection of hand-picked wines and carefully curated cocktails.
+                            Delight in a flavorful journey with every bite, as our meals are paired with refreshing drinks and crafted to perfection.
                         </Typography>
 
                         <CustomButton
@@ -71,7 +71,7 @@ const Welcome = () => {
                         <img
                             src={welcome}
                             alt="welcome"
-                            style={{ maxWidth: '100%', marginBottom: '2rem' }}
+                            style={{ maxWidth: '100%', marginBottom: '2rem', width:'650px' }}
                         />
                     </Box>
                 </CustomBox>

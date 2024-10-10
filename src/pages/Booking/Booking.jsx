@@ -49,7 +49,7 @@ const Booking =() => {
         flexDirection:'column',
         justifyContent:'center',
         alignItems:'center',
-        padding:'40px'
+        padding:'80px'
     }}>
         <div style={{
             width:'5%',
@@ -201,9 +201,12 @@ const Booking =() => {
             guideBtn={true}
         />
 
+        
+
       
     </Box>
   )
 }
 
 export default Booking
+

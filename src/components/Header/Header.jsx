@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material";
 import CustomButton from "../CustomButton/CustomButton";
-import logoImg from "../../assets/logo.png";
+import logoImg from "../../assets/LinkedIn cover - 1 1.png";
 import React, { useState } from "react";
 
 //for drawer
@@ -20,9 +20,17 @@ import {
   ListItemText,
 } from "@mui/material";
 
+//for navigation  using useNavigate
+
+import { useNavigate } from "react-router-dom";
+
+
+
 function Header() {
   //for working of drawer with the help of state using useState hook
   const [mobileMenu, setMobileMenu] = useState({ left: false });
+
+  const navigate = useNavigate()
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -47,7 +55,7 @@ function Header() {
       >
         <List>
           {nav_titles.map((item, index) => (
-            <ListItem key={index} disablePadding>
+            <ListItem key={index} disablePadding  onClick={()=>navigate(item.path)}>
               <ListItemButton>
                 <ListItemIcon>
                   {index === 0 && <HomeIcon />}
@@ -71,15 +79,15 @@ function Header() {
       display: "Home",
     },
     {
-      path: "/",
+      path: "/dishes",
       display: "Dishes",
     },
     {
-      path: "/",
+      path: "/services",
       display: "Servises",
     },
     {
-      path: "/",
+      path: "/About",
       display: "About Us",
     },
   ];
@@ -132,7 +140,7 @@ function Header() {
         justifyContent: "space-between",
         padding: "40px",
         maxWidth: "auto",
-        backgroundColor: "#fed801",
+        backgroundColor: "#F6F193",
         marginLeft: "0px",
         marginBottom: "-24px",
       }}
@@ -161,11 +169,11 @@ function Header() {
             {list("left")}
           </Drawer>
 
-          <NavBarLogo src={logoImg} />
+          <NavBarLogo src={logoImg} style={{width:'250px'}} />
         </Box>
         <NavBarLinksBox>
           {nav_titles.map((item, index) => (
-            <NavBarLink variant="body2">{item.display}</NavBarLink>
+            <NavBarLink variant="body2" onClick={()=>navigate(item.path)}>{item.display}</NavBarLink>
           ))}
         </NavBarLinksBox>
       </Box>
