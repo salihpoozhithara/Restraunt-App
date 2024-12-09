@@ -43,7 +43,7 @@ const Footer = () => {
     <Box
         sx={{
             py:10,
-            backgroundColor:'#fff6b2'
+            backgroundColor:'#ebe8e7 '
         }}
     >
 

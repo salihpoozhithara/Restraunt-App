@@ -17,7 +17,7 @@ const Delivery = () => {
     }))
 
     const CustomContainer = styled(Container)(({theme}) => ({
-        backgroundColor:'#fed801',
+        backgroundColor:'#ebe8e7',
         height:'416px',
         borderRadius:'15px',
         display:'flex',
@@ -38,7 +38,7 @@ const Delivery = () => {
             <Box>
                 <Typography sx={{
                     fontSize:'35px',
-                    color:'white',
+                    color:'black',
                     fontWeight:'700',
                     my: 3,
                     fontFamily:'monospace'

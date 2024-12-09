@@ -98,7 +98,7 @@ function Header() {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    gap: theme.spacing(3),
+    gap: theme.spacing(4),
     [theme.breakpoints.down("md")]: {
       display: "none",
     },
@@ -138,9 +138,9 @@ function Header() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "40px",
+        padding: "20px",
         maxWidth: "auto",
-        backgroundColor: "#F6F193",
+        backgroundColor: "#ebe8e7",
         marginLeft: "0px",
         marginBottom: "-24px",
       }}
@@ -157,6 +157,7 @@ function Header() {
           sx={{
             display: "flex",
             alignItems: "center",
+            
           }}
         >
           {/* drawer */}

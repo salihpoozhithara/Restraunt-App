@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system'; 
 import Container from '@mui/material/Container'; 
 import CustomButton from '../../components/CustomButton/CustomButton';
-import welcome from '../../assets/Curry Rice Hd Transparent, Indian Food Talley Curry With Rice, India, Food, Thali PNG Image For Free Download 1.png';
+import welcome from '../../assets/welcome 1.png';
 
 const CustomBox = styled(Box)(({ theme }) => ({
     display: 'flex',
@@ -30,21 +30,21 @@ const Title = styled(Typography)(({ theme }) => ({
 
 const Welcome = () => {
     return (
-        <Box sx={{ backgroundColor: '#F6F193', minHeight: '80vh' }}>
-            <Container>
+        <Box sx={{ backgroundColor: '#F9F6EE', minHeight: '40vh' }}>
+            <Container >
                 <CustomBox>
                     <Box sx={{ flex: '1' }}>
                         <Typography
                             variant="body2"
                             sx={{
                                 fontSize: '18px',
-                                color: '#687690',
+                                color: '#5a6473',
                                 fontWeight: '500',
-                                mt: '10',
+                                mt: '30px',
                                 mb: '4',
                             }}
                         >
-                            Welcome to TAMARIND FOOD CORNER
+                           <marquee>TAMARIND FOOD CORNER</marquee> 
                         </Typography>
                         <Title variant="h1">
                         Experience flavors you'll fall in love with.
@@ -71,7 +71,7 @@ const Welcome = () => {
                         <img
                             src={welcome}
                             alt="welcome"
-                            style={{ maxWidth: '100%', marginBottom: '2rem', width:'650px' }}
+                            style={{ maxWidth: '100%', marginBottom: '2rem', marginTop: '6rem', width:'650px' ,marginLeft:'6rem' }}
                         />
                     </Box>
                 </CustomBox>
